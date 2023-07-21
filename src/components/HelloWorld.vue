@@ -1,10 +1,11 @@
 <template>
-  <a-scene vr-mode-ui="enabled: false" embedded arjs>
-    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-  </a-scene>
+  <div>
+    <a href="intent://arvr.google.com/scene-viewer/1.0?mode=ar_preferred&disable_occlusion=true&enable_vertical_placement=true&file=https%3A%2F%2Fmy-personal-assets.s3.us-west-1.amazonaws.com%2Fmatisse.gltf#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https%3A%2F%2Fwww.studiomalek.com%2F%23model-viewer-no-ar-fallback;end">
+      <button>
+        BUTTON
+      </button>
+    </a>
+  </div>
 </template>
 
 <script>
