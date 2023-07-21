@@ -10,6 +10,20 @@
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/three-usdz-loader@1.0.7/lib/USDZLoader.min.js"></script>
+
+    <script type="importmap">
+    {
+        "imports": {
+        "three": "https://unpkg.com/three@v0.149.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@v0.149.0/examples/jsm/"
+        }
+    }
+    </script>
+
     <style>
       #container {
         visibility: hidden;
@@ -47,7 +61,7 @@
         id="the-viewer"
         alt="3D model of product"
         src="https://my-personal-assets.s3.us-west-1.amazonaws.com/matisse.gltf"
-        ios-src="https://my-personal-assets.s3.us-west-1.amazonaws.com/matisse.usdz"
+        ios-src="https://my-personal-assets.s3.us-west-1.amazonaws.com/matisse.glb"
         ar
         auto-rotate
         ar-placement="wall"
